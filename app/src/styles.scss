@@ -1,0 +1,1301 @@
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+
+
+/* ============================================================
+   CLAIM PAGE
+   ============================================================ */
+
+.claim-page {
+    box-sizing: border-box;
+
+    width: 100% !important;
+    max-width: 1400px !important;
+
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    padding: 30px 40px 50px;
+
+    background: #f5f7fa;
+
+    color: #263238;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ============================================================
+   ALL DIRECT CONTAINERS
+   ============================================================ */
+
+.claim-page,
+.claim-page > div,
+.claim-page > div > div {
+    box-sizing: border-box;
+}
+
+
+/* ============================================================
+   POLICY FETCH ROW
+   ============================================================ */
+
+.claim-page .policy-fetch-row {
+    width: 100% !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+
+    align-items: flex-start !important;
+
+    flex-wrap: nowrap !important;
+
+    gap: 20px !important;
+
+    margin-bottom: 25px !important;
+
+    box-sizing: border-box;
+}
+
+
+/* Policy number */
+
+.claim-page .policy-number-column {
+    width: auto !important;
+
+    flex: 1 1 auto !important;
+
+    min-width: 0 !important;
+}
+
+.claim-page .policy-number-column mat-form-field {
+    width: 100% !important;
+
+    display: block !important;
+}
+
+
+/* Fetch */
+
+.claim-page .fetch-column {
+    width: 130px !important;
+
+    max-width: 130px !important;
+
+    flex: 0 0 130px !important;
+}
+
+.claim-page .fetch-column button {
+    width: 130px !important;
+
+    height: 44px !important;
+
+    color: white !important;
+
+    background: #1976d2 !important;
+
+    border-radius: 4px !important;
+
+    font-weight: 500 !important;
+}
+
+
+/* ============================================================
+   POLICY DETAILS
+   ============================================================ */
+
+.claim-page .policy-details {
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+    padding: 20px 25px !important;
+
+    margin-bottom: 30px !important;
+
+    background: white !important;
+
+    border: 1px solid #dfe4ea !important;
+
+    border-radius: 5px !important;
+}
+
+
+/*
+   DO NOT set display:none here.
+   fxShow will control visibility.
+*/
+
+
+/* Policy Details heading */
+
+.claim-page .policy-details > div:first-child {
+    width: 100% !important;
+
+    margin-bottom: 10px !important;
+
+    font-size: 18px !important;
+
+    font-weight: 600 !important;
+
+    color: #26374a !important;
+}
+
+
+/* Every policy row */
+
+.claim-page .policy-details > div:not(:first-child) {
+    width: 100% !important;
+
+    display: flex !important;
+
+    flex-direction: row !important;
+
+    flex-wrap: wrap !important;
+
+    align-items: flex-start !important;
+
+    box-sizing: border-box !important;
+
+    margin: 0 !important;
+}
+
+
+/* Each policy column */
+
+.claim-page .policy-details
+> div:not(:first-child)
+> div {
+    box-sizing: border-box !important;
+
+    width: 33.333333% !important;
+
+    max-width: 33.333333% !important;
+
+    flex: 0 0 33.333333% !important;
+
+    padding: 0 10px !important;
+
+    min-width: 0 !important;
+}
+
+
+/* Policy fields */
+
+.claim-page .policy-details mat-form-field {
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    display: block !important;
+
+    box-sizing: border-box !important;
+
+    margin: 0 !important;
+}
+
+
+/* ============================================================
+   CLAIM DETAILS CONTAINER
+   ============================================================ */
+
+.claim-page .claim-details {
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+    padding: 0 !important;
+}
+
+
+/* Claim Details heading */
+
+.claim-page .claim-details > div:first-child {
+    width: 100% !important;
+
+    margin-bottom: 20px !important;
+
+    font-size: 18px !important;
+
+    font-weight: 600 !important;
+
+    color: #26374a !important;
+}
+
+
+/* ============================================================
+   CLAIM FORM ROWS
+   ============================================================ */
+
+
+/*
+   Each row:
+   
+   Date of Loss | Loss Type | Damage Group
+   
+   Estimated   | Garage     |
+*/
+
+.claim-page .claim-details > div:not(:first-child) {
+    width: 100% !important;
+
+    display: flex !important;
+
+    flex-direction: row !important;
+
+    flex-wrap: wrap !important;
+
+    align-items: flex-start !important;
+
+    box-sizing: border-box !important;
+
+    margin-bottom: 10px !important;
+}
+
+
+/* ============================================================
+   NORMAL CLAIM FIELD COLUMNS
+   ============================================================ */
+
+.claim-page .claim-details
+> div:not(:first-child)
+> div {
+    box-sizing: border-box !important;
+
+    width: 33.333333% !important;
+
+    max-width: 33.333333% !important;
+
+    flex: 0 0 33.333333% !important;
+
+    min-width: 0 !important;
+
+    padding-left: 10px !important;
+
+    padding-right: 10px !important;
+
+    margin: 0 !important;
+}
+
+
+/* ============================================================
+   MATERIAL FORM FIELD
+   ============================================================ */
+
+.claim-page mat-form-field {
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    display: block !important;
+
+    box-sizing: border-box !important;
+
+    margin: 0 !important;
+}
+
+
+/*
+   VERY IMPORTANT:
+   Don't force .mat-form-field-infix to 300px.
+*/
+
+.claim-page .mat-form-field-infix {
+    width: auto !important;
+
+    max-width: 100% !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Material wrapper */
+
+.claim-page .mat-form-field-wrapper {
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+    padding-bottom: 8px !important;
+}
+
+
+/* ============================================================
+   DATE FIELD
+   ============================================================ */
+
+.claim-page .date-field {
+    width: 33.333333% !important;
+
+    max-width: 33.333333% !important;
+
+    flex: 0 0 33.333333% !important;
+
+    position: relative !important;
+
+    box-sizing: border-box !important;
+}
+
+
+.claim-page .date-field mat-form-field {
+    width: 100% !important;
+
+    max-width: 100% !important;
+}
+
+
+.claim-page .date-field input {
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+    padding-right: 40px !important;
+}
+
+
+/* Calendar icon */
+
+.claim-page .date-field .mat-datepicker-toggle {
+    width: 40px !important;
+
+    height: 40px !important;
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+}
+
+
+/* ============================================================
+   LOSS TYPE
+   ============================================================ */
+
+.claim-page .loss-type-field {
+    width: 33.333333% !important;
+
+    max-width: 33.333333% !important;
+
+    flex: 0 0 33.333333% !important;
+
+    min-width: 0 !important;
+}
+
+
+.claim-page .loss-type-field mat-form-field {
+    width: 100% !important;
+
+    max-width: 100% !important;
+}
+
+
+.claim-page .loss-type-field .mat-select {
+    width: 100% !important;
+}
+
+
+.claim-page .loss-type-field .mat-select-trigger {
+    width: 100% !important;
+
+    min-height: 35px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ============================================================
+   DAMAGE GROUP
+   ============================================================ */
+
+.claim-page .damage-group-field {
+    width: 33.333333% !important;
+
+    max-width: 33.333333% !important;
+
+    flex: 0 0 33.333333% !important;
+
+    min-width: 0 !important;
+}
+
+
+.claim-page .damage-group-field mat-form-field {
+    width: 100% !important;
+
+    max-width: 100% !important;
+}
+
+
+.claim-page .damage-group-field .mat-select {
+    width: 100% !important;
+}
+
+
+.claim-page .damage-group-field .mat-select-trigger {
+    width: 100% !important;
+
+    min-height: 35px !important;
+}
+
+
+/* ============================================================
+   ESTIMATED PARTS COST
+   ============================================================ */
+
+.claim-page .estimated-parts-field {
+    width: 33.333333% !important;
+
+    max-width: 33.333333% !important;
+
+    flex: 0 0 33.333333% !important;
+
+    min-width: 0 !important;
+}
+
+
+.claim-page .estimated-parts-field mat-form-field {
+    width: 100% !important;
+
+    max-width: 100% !important;
+}
+
+
+/* ============================================================
+   GARAGE TYPE
+   ============================================================ */
+
+.claim-page .garage-type-field {
+    width: 33.333333% !important;
+
+    max-width: 33.333333% !important;
+
+    flex: 0 0 33.333333% !important;
+
+    min-width: 0 !important;
+}
+
+
+.claim-page .garage-type-field mat-form-field {
+    width: 100% !important;
+
+    max-width: 100% !important;
+}
+
+
+.claim-page .garage-type-field .mat-select {
+    width: 100% !important;
+}
+
+
+/* ============================================================
+   CHECKBOX ROW
+   ============================================================ */
+
+.claim-page .checkbox-row {
+    width: 100% !important;
+
+    display: flex !important;
+
+    flex-direction: row !important;
+
+    flex-wrap: nowrap !important;
+
+    align-items: center !important;
+
+    justify-content: flex-start !important;
+
+    gap: 35px !important;
+
+    margin-top: 5px !important;
+
+    margin-bottom: 25px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Checkbox columns */
+
+.claim-page .checkbox-row > div {
+    width: auto !important;
+
+    max-width: none !important;
+
+    flex: 0 0 auto !important;
+
+    padding: 0 !important;
+
+    margin: 0 !important;
+}
+
+
+/* Checkbox itself */
+
+.claim-page .checkbox-row .mat-checkbox {
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    white-space: nowrap !important;
+}
+
+
+.claim-page .checkbox-row .mat-checkbox-layout {
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* ============================================================
+   LOSS DESCRIPTION
+   ============================================================ */
+
+
+/*
+   Loss description gets 2/3 width.
+*/
+
+.claim-page .loss-description-field {
+    width: 66.666666% !important;
+
+    max-width: 66.666666% !important;
+
+    flex: 0 0 66.666666% !important;
+
+    min-width: 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+.claim-page .loss-description-field mat-form-field {
+    width: 100% !important;
+
+    max-width: 100% !important;
+}
+
+
+/* Textarea */
+
+.claim-page .loss-description-field textarea {
+    width: 100% !important;
+
+    min-height: 120px !important;
+
+    height: 120px !important;
+
+    max-height: 220px !important;
+
+    box-sizing: border-box !important;
+
+    resize: vertical !important;
+
+    padding: 10px !important;
+
+    line-height: 1.5 !important;
+}
+
+
+/* ============================================================
+   VALIDATION ERRORS
+   ============================================================ */
+
+
+/*
+   Your mat-error is OUTSIDE mat-form-field.
+   Therefore it must remain in normal document flow.
+*/
+
+.claim-page mat-error {
+    display: block !important;
+
+    position: static !important;
+
+    color: #d32f2f !important;
+
+    font-size: 12px !important;
+
+    line-height: 18px !important;
+
+    font-weight: 400 !important;
+
+    margin: 0 0 8px 0 !important;
+
+    padding: 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Prevent error from disturbing next field */
+
+.claim-page .claim-details
+> div:not(:first-child)
+> div
+> mat-error {
+    width: 100% !important;
+
+    max-width: 100% !important;
+}
+
+
+/* ============================================================
+   SELECT ARROW
+   ============================================================ */
+
+.claim-page .mat-select-arrow {
+    color: #607d8b !important;
+}
+
+
+.claim-page .mat-select-value {
+    color: #263238 !important;
+}
+
+
+/* ============================================================
+   INPUT TEXT
+   ============================================================ */
+
+.claim-page input.mat-input-element,
+.claim-page textarea.mat-input-element {
+    font-size: 14px !important;
+
+    color: #263238 !important;
+}
+
+
+/* Disabled policy values */
+
+.claim-page input.mat-input-element:disabled {
+    color: #455a64 !important;
+
+    -webkit-text-fill-color: #455a64 !important;
+
+    opacity: 1 !important;
+}
+
+
+/* ============================================================
+   SUBMIT
+   ============================================================ */
+
+.claim-page .submit-row {
+    width: 100% !important;
+
+    display: flex !important;
+
+    flex-direction: row !important;
+
+    align-items: center !important;
+
+    justify-content: flex-start !important;
+
+    margin-top: 10px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+.claim-page .submit-row > div {
+    width: auto !important;
+
+    flex: 0 0 auto !important;
+
+    padding: 0 !important;
+}
+
+
+.claim-page .submit-row button {
+    width: 130px !important;
+
+    min-width: 130px !important;
+
+    height: 44px !important;
+
+    color: white !important;
+
+    background: #1976d2 !important;
+
+    border-radius: 4px !important;
+
+    font-size: 14px !important;
+
+    font-weight: 600 !important;
+
+    text-transform: none !important;
+}
+
+
+/* Disabled submit */
+
+.claim-page .submit-row button:disabled {
+    background: #eceff1 !important;
+
+    color: #90a4ae !important;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media screen and (max-width: 900px) {
+
+    .claim-page {
+        padding: 25px 20px 40px !important;
+    }
+
+
+    .claim-page .policy-details
+    > div:not(:first-child)
+    > div,
+
+    .claim-page .claim-details
+    > div:not(:first-child)
+    > div {
+        width: 50% !important;
+
+        max-width: 50% !important;
+
+        flex: 0 0 50% !important;
+    }
+
+
+    .claim-page .date-field,
+    .claim-page .loss-type-field,
+    .claim-page .damage-group-field,
+    .claim-page .estimated-parts-field,
+    .claim-page .garage-type-field {
+        width: 50% !important;
+
+        max-width: 50% !important;
+
+        flex: 0 0 50% !important;
+    }
+
+
+    .claim-page .loss-description-field {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        flex: 0 0 100% !important;
+    }
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media screen and (max-width: 600px) {
+
+    .claim-page {
+        padding: 20px 12px 30px !important;
+    }
+
+
+    .claim-page .policy-fetch-row {
+        flex-direction: column !important;
+
+        flex-wrap: nowrap !important;
+
+        gap: 8px !important;
+    }
+
+
+    .claim-page .policy-number-column {
+        width: 100% !important;
+
+        flex: 0 0 100% !important;
+    }
+
+
+    .claim-page .fetch-column {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        flex: 0 0 100% !important;
+    }
+
+
+    .claim-page .fetch-column button {
+        width: 100% !important;
+    }
+
+
+    .claim-page .policy-details
+    > div:not(:first-child)
+    > div,
+
+    .claim-page .claim-details
+    > div:not(:first-child)
+    > div,
+
+    .claim-page .date-field,
+    .claim-page .loss-type-field,
+    .claim-page .damage-group-field,
+    .claim-page .estimated-parts-field,
+    .claim-page .garage-type-field,
+
+    .claim-page .loss-description-field {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        flex: 0 0 100% !important;
+    }
+
+
+    .claim-page .checkbox-row {
+        flex-direction: column !important;
+
+        align-items: flex-start !important;
+
+        gap: 10px !important;
+    }
+
+
+    .claim-page .submit-row button {
+        width: 130px !important;
+    }
+}
+.mat-form-field {
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 2.125 !important;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    letter-spacing: normal;
+}
+
+/* ============================================================
+   FINAL UI DESIGN - CLAIM PAGE
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   MAIN PAGE
+   ------------------------------------------------------------ */
+
+.claim-page {
+    background: #f4f7fb !important;
+    padding: 30px 45px 50px !important;
+    box-sizing: border-box !important;
+}
+
+
+/* ------------------------------------------------------------
+   MAIN PAGE TITLE - CLAIM PAGE
+   ------------------------------------------------------------ */
+
+.claim-page > div:first-child {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 28px !important;
+}
+
+.claim-page > div:first-child h2 {
+    width: 100% !important;
+    box-sizing: border-box !important;
+
+    margin: 0 !important;
+    padding: 16px 20px !important;
+
+    text-align: center !important;
+
+    font-size: 25px !important;
+    font-weight: 600 !important;
+
+    color: #ffffff !important;
+
+    background: #1976d2 !important;
+
+    border-radius: 7px !important;
+
+    box-shadow: 0 2px 7px rgba(0,0,0,0.12) !important;
+}
+
+
+/* ------------------------------------------------------------
+   POLICY DETAILS CARD
+   ------------------------------------------------------------ */
+
+.claim-page .policy-details {
+    background: #ffffff !important;
+
+    border: 1px solid #e1e7ef !important;
+    border-radius: 8px !important;
+
+    padding: 24px 25px !important;
+
+    margin-bottom: 28px !important;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+}
+
+
+/* Policy Details title */
+
+.claim-page .policy-details > div:first-child {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    width: 100% !important;
+
+    margin-bottom: 20px !important;
+
+    padding: 11px 15px !important;
+
+    box-sizing: border-box !important;
+
+    text-align: center !important;
+
+    font-size: 18px !important;
+    font-weight: 600 !important;
+
+    color: #26374a !important;
+
+    background: #eef4fb !important;
+
+    border-left: 4px solid #1976d2 !important;
+
+    border-radius: 5px !important;
+}
+
+
+/* ------------------------------------------------------------
+   CLAIM DETAILS CARD
+   ------------------------------------------------------------ */
+
+.claim-page .claim-details {
+    background: #ffffff !important;
+
+    border: 1px solid #e1e7ef !important;
+    border-radius: 8px !important;
+
+    padding: 24px 25px !important;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Claim Details title */
+
+.claim-page .claim-details > div:first-child {
+    display: flex !important;
+
+    justify-content: center !important;
+    align-items: center !important;
+
+    width: 100% !important;
+
+    margin-bottom: 22px !important;
+
+    padding: 11px 15px !important;
+
+    box-sizing: border-box !important;
+
+    text-align: center !important;
+
+    font-size: 18px !important;
+    font-weight: 600 !important;
+
+    color: #26374a !important;
+
+    background: #eef4fb !important;
+
+    border-left: 4px solid #1976d2 !important;
+
+    border-radius: 5px !important;
+}
+
+
+/* ------------------------------------------------------------
+   FORM ROW SPACING
+   ------------------------------------------------------------ */
+
+.claim-page .claim-details > div:not(:first-child) {
+    margin-bottom: 6px !important;
+}
+
+
+/* ------------------------------------------------------------
+   FORM FIELD COLUMNS
+   ------------------------------------------------------------ */
+
+.claim-page .claim-details
+> div:not(:first-child)
+> div {
+
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ------------------------------------------------------------
+   MATERIAL INPUTS
+   ------------------------------------------------------------ */
+
+.claim-page mat-form-field {
+    margin-bottom: 0 !important;
+}
+
+
+/* Make fields slightly cleaner */
+
+.claim-page .mat-form-field-wrapper {
+    padding-bottom: 10px !important;
+}
+
+
+/* Input text */
+
+.claim-page input.mat-input-element,
+.claim-page textarea.mat-input-element {
+    font-size: 14px !important;
+}
+
+
+/* ------------------------------------------------------------
+   SELECT FIELDS
+   ------------------------------------------------------------ */
+
+.claim-page .mat-select-trigger {
+    min-height: 34px !important;
+
+    display: flex !important;
+    align-items: center !important;
+}
+
+.claim-page .mat-select-value {
+    font-size: 14px !important;
+}
+
+
+/* ------------------------------------------------------------
+   DATE PICKER
+   ------------------------------------------------------------ */
+
+.claim-page .date-field mat-form-field {
+    width: 100% !important;
+}
+
+.claim-page .date-field input {
+    cursor: pointer !important;
+}
+
+
+/* Calendar icon */
+
+.claim-page .date-field .mat-datepicker-toggle {
+    margin-right: 2px !important;
+}
+
+
+/* ------------------------------------------------------------
+   CHECKBOX AREA
+   ------------------------------------------------------------ */
+
+.claim-page .checkbox-row {
+    background: #f8fafc !important;
+
+    border: 1px solid #e1e7ef !important;
+    border-radius: 6px !important;
+
+    padding: 15px 18px !important;
+
+    margin-top: 8px !important;
+    margin-bottom: 20px !important;
+
+    min-height: 48px !important;
+
+    box-sizing: border-box !important;
+}
+
+.claim-page .checkbox-row .mat-checkbox-label {
+    font-size: 14px !important;
+
+    color: #263238 !important;
+}
+
+
+/* ------------------------------------------------------------
+   LOSS DESCRIPTION
+   ------------------------------------------------------------ */
+
+.claim-page .loss-description-field textarea {
+    min-height: 100px !important;
+
+    height: 100px !important;
+
+    padding: 10px !important;
+
+    border-radius: 3px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ------------------------------------------------------------
+   VALIDATION ERRORS
+   ------------------------------------------------------------ */
+
+.claim-page mat-error {
+    color: #d32f2f !important;
+
+    font-size: 12px !important;
+
+    font-weight: 500 !important;
+
+    line-height: 18px !important;
+
+    margin-top: -4px !important;
+
+    margin-left: 10px !important;
+
+    margin-bottom: 5px !important;
+}
+
+
+/* ------------------------------------------------------------
+   FETCH BUTTON
+   ------------------------------------------------------------ */
+
+.claim-page .fetch-column button {
+    background: #1976d2 !important;
+
+    color: #ffffff !important;
+
+    border-radius: 5px !important;
+
+    font-weight: 600 !important;
+
+    transition: all 0.2s ease !important;
+}
+
+.claim-page .fetch-column button:hover {
+    background: #1565c0 !important;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15) !important;
+}
+
+
+/* ------------------------------------------------------------
+   SUBMIT BUTTON
+   ------------------------------------------------------------ */
+
+.claim-page .submit-row button {
+    background: #1976d2 !important;
+
+    color: #ffffff !important;
+
+    border-radius: 5px !important;
+
+    font-weight: 600 !important;
+
+    min-width: 130px !important;
+
+    height: 44px !important;
+
+    margin-top: 10px !important;
+
+    transition: all 0.2s ease !important;
+}
+
+.claim-page .submit-row button:hover {
+    background: #1565c0 !important;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15) !important;
+}
+
+.claim-page .submit-row button:disabled {
+    background: #cfd8dc !important;
+
+    color: #78909c !important;
+
+    box-shadow: none !important;
+}
+
+
+/* ------------------------------------------------------------
+   POLICY FETCH AREA
+   ------------------------------------------------------------ */
+
+.claim-page .policy-fetch-row {
+    background: #ffffff !important;
+
+    border: 1px solid #e1e7ef !important;
+
+    border-radius: 7px !important;
+
+    padding: 18px 20px 8px !important;
+
+    box-sizing: border-box !important;
+
+    box-shadow: 0 1px 5px rgba(0,0,0,0.04) !important;
+}
+
+
+/* ------------------------------------------------------------
+   DISABLED POLICY INPUTS
+   ------------------------------------------------------------ */
+
+.claim-page input.mat-input-element:disabled {
+    background: #f7f9fb !important;
+
+    color: #455a64 !important;
+
+    -webkit-text-fill-color: #455a64 !important;
+
+    opacity: 1 !important;
+}
+
+
+/* ------------------------------------------------------------
+   RESPONSIVE
+   ------------------------------------------------------------ */
+
+@media screen and (max-width: 900px) {
+
+    .claim-page {
+        padding: 25px 20px 40px !important;
+    }
+
+    .claim-page > div:first-child h2 {
+        font-size: 22px !important;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .claim-page {
+        padding: 18px 12px 30px !important;
+    }
+
+    .claim-page > div:first-child h2 {
+        font-size: 20px !important;
+        padding: 13px !important;
+    }
+
+    .claim-page .policy-details,
+    .claim-page .claim-details {
+        padding: 16px 10px !important;
+    }
+}
