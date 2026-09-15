@@ -1,0 +1,30 @@
+{
+    "classes": [
+        "claim-page",
+        "policy-fetch-row",
+        "policy-number-column",
+        "fetch-column",
+        "policy-details",
+        "claim-details",
+        "mat-form-field-infix",
+        "mat-form-field-wrapper",
+        "date-field",
+        "mat-datepicker-toggle",
+        "loss-type-field",
+        "mat-select",
+        "mat-select-trigger",
+        "damage-group-field",
+        "estimated-parts-field",
+        "garage-type-field",
+        "checkbox-row",
+        "mat-checkbox",
+        "mat-checkbox-layout",
+        "loss-description-field",
+        "mat-select-arrow",
+        "mat-select-value",
+        "mat-input-element",
+        "submit-row",
+        "mat-form-field",
+        "mat-checkbox-label"
+    ]
+}

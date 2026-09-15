@@ -1,0 +1,13 @@
+{
+    "displayName": "Motor-POC-UI",
+    "appName": "motor-poc-ui",
+    "description": "Motor-POC-UI",
+    "lastModified": "2026-09-09T17:09:31.383Z",
+    "imgSourcePath": "",
+    "version": "1.0.0",
+    "appType": "uiOnly",
+    "templateName": "blank",
+    "createDate": "2026-09-09T17:09:30.715Z",
+    "analyticsId": "eb96747a-efc1-437f-e4be-2e27fd7b0774",
+    "createdStudioVersion": "9.3.0"
+}

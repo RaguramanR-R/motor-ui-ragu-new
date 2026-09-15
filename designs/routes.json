@@ -1,0 +1,18 @@
+{
+    "routes": [
+        {
+            "component": "Claim_pageComponent",
+            "path": "Claim_page"
+        },
+        {
+            "path": "''",
+            "redirectTo": "Claim_page",
+            "pathMatch": "full",
+            "default": true
+        },
+        {
+            "path": "**",
+            "component": "PageNotFoundComponent"
+        }
+    ]
+}
