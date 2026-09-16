@@ -19,11 +19,11 @@
         "name": "",
         "functionName": "sd_jCXW9eER2CPk3KPR",
         "category": "Lifecycle Events",
-        "x": 30,
-        "y": 30,
+        "x": 25,
+        "y": 40,
         "wires": [
             [
-                "sd_n2clt1AJ3j31BEUr"
+                "sd_F978JRFOklQAAMmW"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -184,8 +184,8 @@
         ],
         "functionName": "sd_n2clt1AJ3j31BEUr",
         "category": "Function",
-        "x": 180,
-        "y": 30,
+        "x": 305,
+        "y": 40,
         "wires": [
             [
                 "sd_pQpySbarRraWQ9KR"
@@ -250,7 +250,6 @@
         "nodeType": "flow",
         "name": "gethttp",
         "method": "get",
-        "methodMapping": "",
         "methodMappingObj": {},
         "urlMapping": "bh.local.policyApiUrl",
         "urlMappingObj": {
@@ -258,14 +257,11 @@
             "mapVarValue": "policyApiUrl"
         },
         "ret": "json",
-        "retMapping": "",
         "retMappingObj": {},
         "observe": "",
-        "observeMapping": "",
         "observeMappingObj": {},
         "reportProgress": false,
-        "withCreds": false,
-        "reqBody": "",
+        "withCreds": true,
         "reqBodyObj": {
             "mapVarType": "this.page",
             "mapVarValue": ""
@@ -277,11 +273,9 @@
         },
         "headers": {},
         "headersObj": [],
-        "headerMapping": "",
         "headerMappingObj": {},
         "params": {},
         "paramsObj": [],
-        "paramMapping": "",
         "paramMappingObj": {},
         "functionName": "gethttp",
         "category": "HTTP",
@@ -417,7 +411,6 @@
         "nodeType": "flow",
         "name": "",
         "method": "get",
-        "methodMapping": "",
         "methodMappingObj": {},
         "urlMapping": "bh.local.masterApiUrl",
         "urlMappingObj": {
@@ -425,14 +418,11 @@
             "mapVarValue": "masterApiUrl"
         },
         "ret": "json",
-        "retMapping": "",
         "retMappingObj": {},
         "observe": "",
-        "observeMapping": "",
         "observeMappingObj": {},
         "reportProgress": false,
-        "withCreds": false,
-        "reqBody": "",
+        "withCreds": true,
         "reqBodyObj": {
             "mapVarType": "this.page",
             "mapVarValue": ""
@@ -444,11 +434,9 @@
         },
         "headers": {},
         "headersObj": [],
-        "headerMapping": "",
         "headerMappingObj": {},
         "params": {},
         "paramsObj": [],
-        "paramMapping": "",
         "paramMappingObj": {},
         "functionName": "sd_mTmHiNxe9TzrZlzm",
         "category": "HTTP",
@@ -516,7 +504,7 @@
         "accept_csd": false,
         "functionName": "sd_pQpySbarRraWQ9KR",
         "category": "General",
-        "x": 305,
+        "x": 405,
         "y": 40,
         "wires": [
             []
@@ -728,7 +716,7 @@
         "observe": "",
         "observeMappingObj": {},
         "reportProgress": false,
-        "withCreds": false,
+        "withCreds": true,
         "reqBody": "bh.local.claimRequest",
         "reqBodyObj": {
             "mapVarType": "bh.local",
@@ -1062,6 +1050,68 @@
                 "constant": false
             }
         },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Claim_pageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_F978JRFOklQAAMmW",
+        "type": "UseDependency",
+        "z": "sd_f0sCXOnpDn0rbSHv",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "NeutrinosOAuthClientService",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "noc"
+                },
+                "injectable": true
+            }
+        ],
+        "import_all": false,
+        "library": "neutrinos-oauth-client",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_F978JRFOklQAAMmW",
+        "category": "Function",
+        "x": 100,
+        "y": 40,
+        "wires": [
+            [
+                "sd_a1QDu0k20ykm57ON"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Claim_pageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_a1QDu0k20ykm57ON",
+        "type": "Script",
+        "z": "sd_f0sCXOnpDn0rbSHv",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "\n if (!page.noc.isLoggedIn) {\n    await page.noc.login(\"Claim_page\");\n} ",
+        "functionName": "sd_a1QDu0k20ykm57ON",
+        "category": "Function",
+        "x": 200,
+        "y": 40,
+        "wires": [
+            [
+                "sd_n2clt1AJ3j31BEUr"
+            ]
+        ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
         "serviceName": "Claim_pageComponent",

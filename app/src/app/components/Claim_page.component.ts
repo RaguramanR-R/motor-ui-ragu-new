@@ -11,6 +11,7 @@ import { successPopupComponent } from 'app/components/successPopup.component'; /
 import { SDPageCommonService } from 'app/n-services/sd-page-common.service'; //_splitter_
 import { SDBaseService } from 'app/n-services/SDBaseService'; //_splitter_
 import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'; //_splitter_
+import { NeutrinosOAuthClientService } from 'neutrinos-oauth-client'; //_splitter_
 //append_imports_end
 
 @Component({
@@ -52,7 +53,7 @@ export class Claim_pageComponent {
 
   sd_jCXW9eER2CPk3KPR(bh) {
     try {
-      bh = this.sd_n2clt1AJ3j31BEUr(bh);
+      bh = this.sd_F978JRFOklQAAMmW(bh);
       //appendnew_next_sd_jCXW9eER2CPk3KPR
       return bh;
     } catch (e) {
@@ -121,6 +122,31 @@ export class Claim_pageComponent {
   }
   //appendnew_flow_Claim_pageComponent_start
 
+  sd_F978JRFOklQAAMmW(bh) {
+    try {
+      this.page.noc = this.__page_injector__.get(NeutrinosOAuthClientService);
+      bh = this.sd_a1QDu0k20ykm57ON(bh);
+      //appendnew_next_sd_F978JRFOklQAAMmW
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_F978JRFOklQAAMmW');
+    }
+  }
+
+  async sd_a1QDu0k20ykm57ON(bh) {
+    try {
+      const page = this.page;
+      if (!page.noc.isLoggedIn) {
+        await page.noc.login('Claim_page');
+      }
+      bh = this.sd_n2clt1AJ3j31BEUr(bh);
+      //appendnew_next_sd_a1QDu0k20ykm57ON
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_a1QDu0k20ykm57ON');
+    }
+  }
+
   sd_n2clt1AJ3j31BEUr(bh) {
     try {
       this.page.policyFetched = false;
@@ -174,6 +200,7 @@ export class Claim_pageComponent {
         headers: {},
         params: {},
         body: undefined,
+        withCredentials: true,
       };
       bh.local.response = await this.sdService.nHttpRequest(requestOptions);
       bh = this.sd_4BEoMISi0I2GjHGT(bh);
@@ -274,6 +301,7 @@ export class Claim_pageComponent {
         headers: {},
         params: {},
         body: undefined,
+        withCredentials: true,
       };
       bh.local.records = await this.sdService.nHttpRequest(requestOptions);
       bh = this.sd_DcxFvemIknuFQrQ4(bh);
@@ -924,6 +952,7 @@ export class Claim_pageComponent {
         headers: {},
         params: {},
         body: bh.local.claimRequest,
+        withCredentials: true,
       };
       bh.local.createClaimResponse = await this.sdService.nHttpRequest(
         requestOptions

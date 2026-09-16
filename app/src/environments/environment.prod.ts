@@ -7,7 +7,7 @@ export const environment = {
         "appName": "motor-poc-ui",
         "namespace": "com.neutrinos-training.motor-poc-ui",
         "useDefaultExceptionUI": true,
-        "isIDSEnabled": "false",
+        "isIDSEnabled": "true",
         "webAppMountpoint": "web",
         "NGFORAGE_MOBILE_DRIVER": "INDEXED_DB"
     }
