@@ -81,7 +81,11 @@ export const appProviders = [
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
-  { path: 'Claim_page', component: Claim_pageComponent },
+  {
+    path: 'Claim_page',
+    component: Claim_pageComponent,
+    canActivate: [NeutrinosAuthGuardService],
+  },
   { path: '', redirectTo: 'Claim_page', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

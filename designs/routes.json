@@ -2,7 +2,11 @@
     "routes": [
         {
             "component": "Claim_pageComponent",
-            "path": "Claim_page"
+            "path": "Claim_page",
+            "canActivate": {
+                "edited": true,
+                "value": "NeutrinosAuthGuardService"
+            }
         },
         {
             "path": "''",
