@@ -23,7 +23,7 @@
         "y": 40,
         "wires": [
             [
-                "sd_F978JRFOklQAAMmW"
+                "sd_n2clt1AJ3j31BEUr"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -261,7 +261,7 @@
         "observe": "",
         "observeMappingObj": {},
         "reportProgress": false,
-        "withCreds": true,
+        "withCreds": false,
         "reqBodyObj": {
             "mapVarType": "this.page",
             "mapVarValue": ""
@@ -422,7 +422,7 @@
         "observe": "",
         "observeMappingObj": {},
         "reportProgress": false,
-        "withCreds": true,
+        "withCreds": false,
         "reqBodyObj": {
             "mapVarType": "this.page",
             "mapVarValue": ""
@@ -716,7 +716,7 @@
         "observe": "",
         "observeMappingObj": {},
         "reportProgress": false,
-        "withCreds": true,
+        "withCreds": false,
         "reqBody": "bh.local.claimRequest",
         "reqBodyObj": {
             "mapVarType": "bh.local",
@@ -1050,68 +1050,6 @@
                 "constant": false
             }
         },
-        "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "Claim_pageComponent",
-        "generated": true
-    },
-    {
-        "id": "sd_F978JRFOklQAAMmW",
-        "type": "UseDependency",
-        "z": "sd_f0sCXOnpDn0rbSHv",
-        "viewType": "client-pages",
-        "nodeType": "flow",
-        "name": "",
-        "inputs": 1,
-        "outputs": 1,
-        "property": "",
-        "propertyType": "bh",
-        "propertyGv": "bh.",
-        "alias": "",
-        "modules": [
-            {
-                "textIp": "NeutrinosOAuthClientService",
-                "typedIpValue": {
-                    "type": "this.page",
-                    "value": "noc"
-                },
-                "injectable": true
-            }
-        ],
-        "import_all": false,
-        "library": "neutrinos-oauth-client",
-        "serviceDesignerType": "pages",
-        "functionName": "sd_F978JRFOklQAAMmW",
-        "category": "Function",
-        "x": 100,
-        "y": 40,
-        "wires": [
-            [
-                "sd_a1QDu0k20ykm57ON"
-            ]
-        ],
-        "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "Claim_pageComponent",
-        "generated": true
-    },
-    {
-        "id": "sd_a1QDu0k20ykm57ON",
-        "type": "Script",
-        "z": "sd_f0sCXOnpDn0rbSHv",
-        "viewType": "common",
-        "nodeType": "flow",
-        "name": "",
-        "script": "\n if (!page.noc.isLoggedIn) {\n    await page.noc.login(\"Claim_page\");\n} ",
-        "functionName": "sd_a1QDu0k20ykm57ON",
-        "category": "Function",
-        "x": 200,
-        "y": 40,
-        "wires": [
-            [
-                "sd_n2clt1AJ3j31BEUr"
-            ]
-        ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
         "serviceName": "Claim_pageComponent",
