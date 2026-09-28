@@ -5,7 +5,7 @@
             "path": "Claim_page",
             "canActivate": {
                 "edited": true,
-                "value": "NeutrinosAuthGuardService"
+                "value": ""
             }
         },
         {
